@@ -1,8 +1,10 @@
-// const name = document.getElementById("textBox");
+// const monsterName = document.getElementById('textBox');
+const monsterName = "great jagras";
+const apiUrl = `https://mhw-db.com/monsters?q={"name": ${monsterName}}`;
 
 async function callAPI() {
   const url =
-    'https://mhw-db.com/monsters?q={"name":"great jagras"}';
+    apiUrl
   const options = {
     method: "GET",
     headers: {
