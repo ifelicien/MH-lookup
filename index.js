@@ -1,6 +1,8 @@
+// const name = document.getElementById("textBox");
+
 async function callAPI() {
   const url =
-    "https://monster-hunter-basic-information.p.rapidapi.com/search?name=great_jaggi";
+    'https://mhw-db.com/monsters?q={"name":"great jagras"}';
   const options = {
     method: "GET",
     headers: {
