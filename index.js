@@ -1,24 +1,27 @@
-// const monsterName = document.getElementById('textBox');
-const monsterName = "great jagras";
-const apiUrl = `https://mhw-db.com/monsters?q={"name": ${monsterName}}`;
+fetchMonsterData();
 
-async function callAPI() {
-  const url =
-    apiUrl
-  const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "e37148a6cfmsh8579160b8236eccp19421ajsn833b493f0a11",
-      "X-RapidAPI-Host": "monster-hunter-basic-information.p.rapidapi.com",
-    },
-  };
-
+async function fetchMonsterData() {
   try {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    console.log(result);
+    const monsterName = document
+      .getElementById("monsterName")
+      .value.toLowerCase();
+    // const monsterName = "anjanath";
+    const mhApi = `https://mhw-db.com/monsters?q={"name": "${monsterName}"}`;
+    const response = await fetch(mhApi);
+
+    if (!response.ok) {
+      throw new Error("Could not fetch resource");
+    }
+
+    const data = await response.json();
+    console.log(data);
+
+    const monsterDescription = data[0].description;
+    const monsterDescript = document.getElementById("description");
+
+    monsterDescript.textContent = monsterDescription;
+    monsterDescript.style.display = "block";
   } catch (error) {
     console.error(error);
   }
 }
-callAPI();

@@ -1,24 +1,25 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 95%);
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  text-align: center;
 }
 
-h1{
-    color: blue;
+h1 {
+  color: blue;
 }
-form{
-    background-color: hsla(0, 0%, 100%);
-    text-align: center;
-    max-width: 350px;
-    margin: auto;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px hsla(0, 0%, 0%, .3);
+#infoReturn img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#textBox {
+/* #description {
     width: 50%;
     text-align: center;
     font-size: 2em;
     border: 2px solid hsla(0, 0%, 0%, .8);
+} */
+
+#infoReturn {
+  text-align: center;
+  padding-top: 75px;
 }
