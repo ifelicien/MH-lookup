@@ -1,25 +1,37 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: hsl(0, 0%, 95%);
+body{
   text-align: center;
 }
 
-h1 {
-  color: blue;
-}
-#infoReturn img {
-  margin-left: auto;
-  margin-right: auto;
+h1{
+  font-family: "Anybody", sans-serif;
+  font-size: 40px;
 }
 
-/* #description {
-    width: 50%;
-    text-align: center;
-    font-size: 2em;
-    border: 2px solid hsla(0, 0%, 0%, .8);
-} */
+h4{
+  font-family: "Anybody", sans-serif;
+  font-size: 25px;
+}
 
-#infoReturn {
+h3{
+  font-family: "Anybody", sans-serif;
+  font-size: 30px;
+}
+
+#monsterName {
   text-align: center;
-  padding-top: 75px;
+  font-size: 25px;
+  width: 20%;
+  height: 40px;
+  margin-bottom: 50px;
+}
+
+button{
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+p{
+  font-family: "Anybody", sans-serif;
+  font-size: 25px;
 }
