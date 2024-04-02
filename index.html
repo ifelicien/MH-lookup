@@ -16,23 +16,24 @@
     <div id="mainContent">
       <h1>Monster Lookup</h1>
       <h4>Monster Hunter World data lookup tool</h4>
-      <input type="text" id="monsterName" placeholder="" /><br>
+      <input type="text" id="monsterName" placeholder="" /><br />
 
       <button id="button" onclick="fetchMonsterData()">submit</button>
 
       <div id="infoReturn">
-        <h3>Description:</h3>
-        <p id="description" style="display: none"></p><br>
-        
-        <h3>Species:</h3>
-        <p id="species" style="display: none;"></p><br>
+        <h3 id="descript"></h3>
+        <p id="description" style="display: none"></p>
+        <br />
 
-        <h3>Element:</h3>
+        <h3 id="species"></h3>
+        <p id="speciesa" style="display: none"></p>
+        <br />
+
+        <h3 id="element"></h3>
         <p id="elemental" style="display: none"></p>
       </div>
     </div>
 
-    <!-- <script src="pokemon.js"></script> -->
     <script src="index.js"></script>
   </body>
 </html>

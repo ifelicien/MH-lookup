@@ -17,6 +17,9 @@ async function fetchMonsterData() {
     console.log(data);
 
     // Monster description
+    const descriptionText = "Description";
+    document.querySelector("#descript").innerHTML = descriptionText;
+
     const monsterDescription = data[0].description;
     const monsterDescript = document.getElementById("description");
 
@@ -24,14 +27,19 @@ async function fetchMonsterData() {
     monsterDescript.style.display = "block";
 
     // Monster Species
+    const speciesText = "Species";
+    document.querySelector("#species").innerHTML = speciesText;
+
     const monsterSpecies = data[0].species;
-    const species = document.getElementById("species");
+    const species = document.getElementById("speciesa");
 
     species.textContent = monsterSpecies;
     species.style.display = "block";
 
-
     // Monster Element
+    const elementText = "Element";
+    document.querySelector("#element").innerHTML = elementText;
+
     const elementType = data[0].elements;
     const monsterElement = document.getElementById("elemental");
 
