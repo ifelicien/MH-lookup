@@ -33,10 +33,17 @@ async function fetchMonsterData() {
 
     // Monster Element
     const elementType = data[0].elements;
-    const monsterElement = document.getElementById("elemental");
+    const monsterElement = document.getElementById("element");
 
     monsterElement.textContent = elementType;
     monsterElement.style.display = "block";
+
+    //Monster Weakness
+    const weaknessType = data[0].weaknesses;
+    const monsterWeakness = document.getElementById('weakness');
+
+    monsterWeakness.textContent = weaknessType;
+    monsterWeakness.style.display = "block";
   } catch (error) {
     console.error(error);
   }
