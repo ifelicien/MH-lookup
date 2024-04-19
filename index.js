@@ -21,7 +21,7 @@ async function fetchMonsterData() {
     document.querySelector("#descript").innerHTML = descriptionText;
 
     const monsterDescription = data[0].description;
-    const monsterDescript = document.getElementById("description");
+    const monsterDescript = document.getElementById("descript");
 
     monsterDescript.textContent = monsterDescription;
     monsterDescript.style.display = "block";
@@ -31,7 +31,7 @@ async function fetchMonsterData() {
     document.querySelector("#species").innerHTML = speciesText;
 
     const monsterSpecies = data[0].species;
-    const species = document.getElementById("speciesa");
+    const species = document.getElementById("species");
 
     species.textContent = monsterSpecies;
     species.style.display = "block";
@@ -47,8 +47,11 @@ async function fetchMonsterData() {
     monsterElement.style.display = "block";
 
     //Monster Weakness
+    const weaknessText = "Weakness";
+    document.querySelector("#weakness").innerHTML = weaknessText;
+
     const weaknessType = data[0].weaknesses;
-    const monsterWeakness = document.getElementById('weakness');
+    const monsterWeakness = document.getElementById("weakness");
 
     monsterWeakness.textContent = weaknessType;
     monsterWeakness.style.display = "block";
