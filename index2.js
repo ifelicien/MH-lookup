@@ -1,14 +1,14 @@
 fetchMonsterData();
-const title = "Monster Hunter Data Tools";
+const title = "Monster Hunter Data Tool";
 document.querySelector("#title").innerHTML = title;
 
 async function fetchMonsterData() {
   try {
-    const monsterName = document
-      .getElementById("monsterName")
-      .value.toLowerCase();
-    // const monsterName = "rathalos";
-    const mhApi = `https://mhw-db.com/monsters?q={"name": "${monsterName}"}`;
+    // const search = document
+    //   .getElementById("search")
+    //   .value.toLowerCase();
+    const search = "rathalos";
+    const mhApi = `https://mhw-db.com/monsters?q={"name": "${search}"}`;
     const response = await fetch(mhApi);
 
     if (!response.ok) {

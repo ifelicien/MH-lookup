@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <script src="./index2.js" defer></script>
+    <title>MHDT</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title-bar">
+            <div id="title"></div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search Monster" />
+            <button id="button" onclick="fetchMonsterData()">lookup</button>
+        </div>
+        <div class="display-data">
+            <div class="display">
+                <img src="" alt="monster image">
+            </div>
+            <div class="monster-description">
+                <ul>
+                    <li id="descript"></li><br>
+                    <li id="locale"></li><br>
+                    <li id="species"></li><br>
+                    <li id="element"></li><br>
+                    <li id="weakness"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
