@@ -1,41 +1,44 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.title-bar{
-    display: flex;
-    font-size: 1.5em;
+.title-bar {
+  display: flex;
+  font-size: 1.5em;
 }
 
-#title{
-    padding-left: 20px;
-    padding-top: 10px;
+#title {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: "Jersey";
 }
 
-.search-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    margin-top: 3%;
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3%;
 }
 
-#search{
-    margin-right: 5px;
-    height: 25px;
-    width: 200px;
-    text-align: center;
+#search {
+  margin-right: 5px;
+  height: 25px;
+  width: 200px;
+  text-align: center;
 }
 
-#button{
-    width: 60px;
+#button {
+  width: 60px;
 }
 
-.display-data{
-    display: flex;
-    flex-direction: row;
+.display-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5%;
 }
 
-.monster-description ul{
-    list-style: none;
+.monster-description ul {
+  list-style: none;
 }

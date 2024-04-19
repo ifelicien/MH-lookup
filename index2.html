@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style2.css" />
     <script src="./index2.js" defer></script>
     <title>MHDT</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="title-bar">
-            <div id="title"></div>
-        </div>
+      <div class="title-bar">
+        <h1 id="title"></h1>
+      </div>
     </div>
     <div class="main-content">
-        <div class="search-bar">
-            <input type="text" id="search" placeholder="Search Monster" />
-            <button id="button" onclick="fetchMonsterData()">lookup</button>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Search Monster" />
+        <button id="button" onclick="fetchMonsterData()">lookup</button>
+      </div>
+      <div class="display-data">
+        <div class="display">
+          <img src="" alt="monster image" />
         </div>
-        <div class="display-data">
-            <div class="display">
-                <img src="" alt="monster image">
-            </div>
-            <div class="monster-description">
-                <ul>
-                    <li id="descript"></li><br>
-                    <li id="locale"></li><br>
-                    <li id="species"></li><br>
-                    <li id="element"></li><br>
-                    <li id="weakness"></li>
-                </ul>
-            </div>
+        <div class="monster-description">
+          <ul>
+            <h3>description</h3>
+            <li id="descript"></li>
+            <br />
+            <h3>location</h3>
+            <li id="locale"></li>
+            <br />
+            <h3>species</h3>
+            <li id="species"></li>
+            <br />
+            <h3>element</h3>
+            <li id="element"></li>
+            <br />
+            <h3>weakness</h3>
+            <li id="weakness"></li>
+          </ul>
         </div>
+      </div>
     </div>
-
-    
-</body>
+  </body>
 </html>

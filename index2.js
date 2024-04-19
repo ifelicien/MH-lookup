@@ -28,6 +28,15 @@ async function fetchMonsterData() {
     monsterDescript.textContent = monsterDescription;
     monsterDescript.style.display = "block";
 
+    // Monster Location
+    const locationText = "Location";
+    document.querySelector("#locale").innerHTML = locationText;
+
+    const monsterLocation = data[0].locations;
+    const monsterLocale = document.getElementById("locale");
+
+    monsterLocale.textContent = monsterLocation;
+    monsterLocale.style.display = "block";
     // Monster Species
     const speciesText = "Species";
     document.querySelector("#species").innerHTML = speciesText;
